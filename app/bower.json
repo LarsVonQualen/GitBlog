@@ -17,6 +17,13 @@
   "dependencies": {
     "angular": "~1.4.0",
     "angular-bootstrap": "~0.13.0",
-    "angular-ui-router": "~0.2.15"
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.4",
+    "font-awesome": "~4.3.0",
+    "angular-sanitize": "~1.4.0",
+    "lodash": "~3.9.3",
+    "marked": "~0.3.3",
+    "highlightjs": "~8.5.0",
+    "angular-loading-bar": "~0.7.1"
   }
 }

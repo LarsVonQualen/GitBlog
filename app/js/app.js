@@ -1,0 +1,10 @@
+angular.module("gitblog", ["ui.router", "ui.bootstrap", "ngSanitize", "angular-loading-bar"])
+  .config(["cfpLoadingBarProvider", function (cfpLoadingBarProvider) {
+    cfpLoadingBarProvider.includeSpinner = false;
+    cfpLoadingBarProvider.latencyThreshold = 0;
+  }])
+  .run(["ConfigService", "$rootScope", function (ConfigService, $rootScope) {
+    ConfigService.get().then(function (config) {
+      $rootScope.config = config;
+    });
+  }]);

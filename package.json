@@ -1,0 +1,23 @@
+{
+  "name": "GitBlog",
+  "version": "0.0.1",
+  "description": "Git rapo based blogging tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LarsVonQualen/GitBlog.git"
+  },
+  "author": "Lars von Qualen <larsvonqualen@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LarsVonQualen/GitBlog/issues"
+  },
+  "homepage": "https://github.com/LarsVonQualen/GitBlog",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "wiredep": "^2.2.2"
+  }
+}

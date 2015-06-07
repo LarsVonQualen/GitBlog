@@ -1,0 +1,74 @@
+<!doctype html>
+<html ng-app="gitblog">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{config.title}}</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/highlightjs/styles/default.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-loading-bar/build/loading-bar.css" />
+    <style type="text/css">
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+    }
+    </style>
+  </head>
+  <body ng-cloak>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12">
+            <h1>{{config.title}}</h1>
+            <p class="lead">
+              {{config.subTitle}}
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12">
+            <gb-navbar></gb-navbar>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12">
+            <div ui-view>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12">
+            <hr />
+            <p class="text-center text-muted">
+              <em>Copyright {{config.copyright.year}} &copy; {{config.copyright.holder}}</em>
+            </p>
+          </div>
+        </div>
+      </div>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/marked/marked.min.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/highlightjs/highlight.pack.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/states.js"></script>
+    <script src="js/services/RequestService.js"></script>
+    <script src="js/services/AppStateService.js"></script>
+    <script src="js/services/ConfigService.js"></script>
+    <script src="js/services/MarkdownService.js"></script>
+    <script src="js/services/PostsService.js"></script>
+    <script src="js/controllers/HomeController.js"></script>
+    <script src="js/controllers/NavbarController.js"></script>
+    <script src="js/controllers/PostController.js"></script>
+    <script src="js/controllers/PostDirectiveController.js"></script>
+    <script src="js/directives/NavbarDirective.js"></script>
+    <script src="js/directives/NavbarLinkDirective.js"></script>
+    <script src="js/directives/MarkdownDirective.js"></script>
+    <script src="js/directives/PostDirective.js"></script>
+    <script src="js/directives/PostSummaryDirective.js"></script>
+    <script src="js/directives/PageDirective.js"></script>
+  </body>
+</html>

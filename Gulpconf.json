@@ -1,0 +1,6 @@
+{
+  "paths": {
+    "index": "app/index.html",
+    "build": "build/"
+  }
+}

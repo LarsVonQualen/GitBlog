@@ -1,0 +1,9 @@
+{
+  "brand": "Gitblog",
+  "title": "Your title goes here!",
+  "subTitle": "My very awesome blog!",
+  "copyright": {
+    "holder": "Lars von Qualen",
+    "year": "2015"
+  }
+}
