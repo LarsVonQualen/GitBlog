@@ -1,1 +1,2 @@
-<post post="postCtrl.post"></post>
+<post post="postCtrl.post" ng-if="postCtrl.postReady"></post>
+<spinner icon="refresh" ng-if="!postCtrl.postReady">Loading post...</spinner>

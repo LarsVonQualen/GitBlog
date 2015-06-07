@@ -1,1 +1,5 @@
-<post-summary post="post" ng-repeat="post in homeCtrl.posts"></post-summary>
+<div class="list-group">
+  <post-summary post="post" ng-repeat="post in homeCtrl.posts"></post-summary>
+</div>
+
+<spinner icon="refresh" ng-hide="homeCtrl.posts.length"></spinner>

@@ -5,11 +5,13 @@ angular.module("gitblog").directive("page", function () {
     scope: {
       page: "@page"
     },
-    controller: ["RequestService", "$scope", function (RequestService, $scope) {
-      this.pageData = "", self = this;
+    controller: ["PageService", "$scope", function (PageService, $scope) {
+      this.pageData = "", this.hasData = false, self = this;
 
-      RequestService.get(["pages/", $scope.page].join("")).then(function (response) {
-        self.pageData = response.data;
+      PageService.getPage($scope.page).then(function (pageData) {
+        self.pageData = pageData;
+      }).finally(function () {
+        self.hasData = true;
       });
     }],
     controllerAs: "pageCtrl"

@@ -7,9 +7,13 @@ angular.module("gitblog").directive("markdown", ["MarkdownService", function (Ma
     },
     link: function ($scope, $element) {
       function render() {
-        var html = MarkdownService.toHtml($scope.data);
+        if (_.isString($scope.data)) {
+          var html = MarkdownService.toHtml($scope.data);
 
-        $element.html(html);
+          $element.html(html);
+        } else {
+          $element.html("");
+        }
       };
 
       var unsubscribe = $scope.$watch("data", function () {

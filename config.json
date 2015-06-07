@@ -1,0 +1,8 @@
+{
+  "folders": {
+    "app": "./app/"
+  },
+  "files": {
+    "postslist": "./app/posts.json"
+  }
+}

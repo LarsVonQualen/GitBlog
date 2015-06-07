@@ -1,9 +1,1 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title"><a ui-sref="post({slug: postDirCtrl.post.slug})">{{postDirCtrl.post.title}}</a></h3>
-  </div>
-  <div class="panel-body">
-    <markdown data="postDirCtrl.markdown"></markdown>
-  </div>
-  <div class="panel-footer">Published by {{postDirCtrl.post.author}} at {{postDirCtrl.post.publishedAt | date}}</div>
-</div>
+<a class="list-group-item" ui-sref="post({slug: post.slug})">{{post.title}} <span class="pull-right">{{post.publishedAt | date}}</span></a>

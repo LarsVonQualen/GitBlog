@@ -5,7 +5,6 @@ angular.module("gitblog").directive("post", function () {
     scope: {
       post: "=post"
     },
-    controller: "PostDirectiveController",
-    controllerAs: "postDirCtrl"
+    replace: true
   };
 });
