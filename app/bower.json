@@ -1,0 +1,22 @@
+{
+  "name": "GitBlog",
+  "version": "0.0.1",
+  "homepage": "https://github.com/LarsVonQualen/GitBlog",
+  "authors": [
+    "Lars von Qualen <larsvonqualen@gmail.com>"
+  ],
+  "description": "Git repo based blogging tool",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-bootstrap": "~0.13.0",
+    "angular-ui-router": "~0.2.15"
+  }
+}
