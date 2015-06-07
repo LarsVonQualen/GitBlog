@@ -5,7 +5,8 @@ var gulp = require("gulp"),
     cli = require("cli"),
     inquirer = require("inquirer"),
     js = require("jsonfile"),
-    _ = require("lodash");
+    _ = require("lodash"),
+    sloc = require("gulp-sloc");
 
 var knownOptions = [
   {
@@ -112,6 +113,11 @@ gulp.task("unpublish", function (done) {
       done();
     });
   });
+});
+
+gulp.task("sloc", function () {
+  gulp.src(config.files.js)
+    .pipe(sloc());
 });
 
 gulp.task("default", ["wiredep"]);

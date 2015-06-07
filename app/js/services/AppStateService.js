@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module("gitblog").service("AppStateService", ["$rootScope", function ($rootScope) {
   var busyCount = 0;
 

@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module("gitblog").config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise("/");
 

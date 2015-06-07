@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module("gitblog").service("PostsService", ["RequestService", "$q", function (RequestService, $q) {
   var posts = null, postCache = [], self = this;
 

@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module("gitblog").directive("gbNavbarLink", function () {
   return {
     restrict: "E",

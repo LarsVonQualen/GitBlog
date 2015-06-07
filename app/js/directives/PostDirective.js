@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module("gitblog").directive("post", function () {
   return {
     restrict: "E",

@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module("gitblog").controller("HomeController", ["PostsService", "AppStateService", function (PostsService, AppStateService) {
   this.posts = [], self = this;
 

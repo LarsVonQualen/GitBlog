@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module("gitblog").directive("markdown", ["MarkdownService", function (MarkdownService) {
   return {
     restrict: "E",

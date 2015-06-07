@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module("gitblog").service("PageService", ["RequestService", "$q", function (RequestService, $q) {
   var self = this, pageCache = [];
 

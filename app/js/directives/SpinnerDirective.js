@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module("gitblog").directive("spinner", function () {
   return {
     restrict: "E",

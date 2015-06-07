@@ -1,8 +1,10 @@
 {
   "folders": {
-    "app": "./app/"
+    "app": "./app/",
+    "js": "./app/js/"
   },
   "files": {
-    "postslist": "./app/posts.json"
+    "postslist": "./app/posts.json",
+    "js": "./app/js/**/*.js"
   }
 }

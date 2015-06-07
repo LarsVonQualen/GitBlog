@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module("gitblog").controller("PostController", ["PostsService", "$state", "$scope", function (PostsService, $state, $scope) {
   this.post = {}, this.postReady = false, self = this;
 

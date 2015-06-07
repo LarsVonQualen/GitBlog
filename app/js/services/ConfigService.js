@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module("gitblog").service("ConfigService", ["RequestService", "$q", function (RequestService, $q) {
   var conf = null, self = this;
 

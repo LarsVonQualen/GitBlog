@@ -18,6 +18,7 @@
   "homepage": "https://github.com/LarsVonQualen/GitBlog",
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-sloc": "^1.0.4",
     "wiredep": "^2.2.2"
   },
   "dependencies": {

@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module("gitblog").service("MarkdownService", ["$sanitize", function ($sanitize) {
   this.toHtml = function (markdown) {
     var rendered = marked(markdown, {

@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module("gitblog", ["ui.router", "ui.bootstrap", "ngSanitize", "ngAnimate", "angular-loading-bar"])
   .config(["cfpLoadingBarProvider", function (cfpLoadingBarProvider) {
     cfpLoadingBarProvider.includeSpinner = false;
